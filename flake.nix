@@ -3,7 +3,7 @@
 
   # Flake inputs
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs"; # also valid: "nixpkgs"
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable"; # also valid: "nixpkgs"
   };
 
   # Flake outputs
@@ -33,10 +33,20 @@
             # The Nix packages provided in the environment
             packages = [
               pkgs.azure-cli
-              pkgs.terraform
-              pkgs.powershell
               pkgs.helix
+              pkgs.powershell
+              pkgs.terraform
+              pkgs.terraform-docs
+              pkgs.tfupdate
+              pkgs.tfsec
+              pkgs.tf-summarize
+              pkgs.tfswitch
+              pkgs.tflint
+              pkgs.checkov
             ];
+            shellHook = ''
+              alias tfplan='terraform plan'
+            '';
           };
       });
     };
