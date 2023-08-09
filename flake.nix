@@ -35,7 +35,6 @@
               pkgs.azure-cli
               pkgs.helix
               pkgs.powershell
-              pkgs.terraform
               pkgs.terraform-docs
               pkgs.tfupdate
               pkgs.tfsec
@@ -44,9 +43,6 @@
               pkgs.tflint
               pkgs.checkov
             ];
-            shellHook = ''
-              alias tfplan='terraform plan'
-            '';
           };
       });
     };
