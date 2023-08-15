@@ -42,6 +42,7 @@
               pkgs.tfswitch
               pkgs.tflint
               pkgs.checkov
+              pkgs.dotnet-runtime_7
             ];
           };
       });
