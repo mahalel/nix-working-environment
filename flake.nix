@@ -33,16 +33,19 @@
             # The Nix packages provided in the environment
             packages = [
               pkgs.azure-cli
-              pkgs.helix
-              pkgs.powershell
-              pkgs.terraform-docs
-              pkgs.tfupdate
-              pkgs.tfsec
-              pkgs.tf-summarize
-              pkgs.tfswitch
-              pkgs.tflint
               pkgs.checkov
               pkgs.dotnet-runtime_7
+              pkgs.helix
+              pkgs.powershell
+              pkgs.pre-commit
+              pkgs.ripgrep
+              pkgs.terraform-docs
+              pkgs.tf-summarize
+              pkgs.tflint
+              pkgs.tfsec
+              pkgs.tfswitch
+              pkgs.tfupdate
+              pkgs.tree
             ];
           };
       });
