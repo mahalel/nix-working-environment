@@ -46,6 +46,11 @@
               pkgs.tfswitch
               pkgs.tfupdate
               pkgs.tree
+              pkgs.fish
+              pkgs.fzf
+              pkgs.meslo-lgs-nf
+              pkgs.fishPlugins.fzf-fish
+              pkgs.fishPlugins.tide
             ];
           };
       });
