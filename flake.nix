@@ -49,6 +49,10 @@
               pkgs.tfupdate
               pkgs.tree
               pkgs.fzf
+<<<<<<< Updated upstream
+=======
+              pkgs.go
+>>>>>>> Stashed changes
             ];
           };
       });
