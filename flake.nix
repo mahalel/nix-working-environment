@@ -36,21 +36,19 @@
               pkgs.checkov
               pkgs.dotnet-runtime_7
               pkgs.helix
+              pkgs.kubernetes-helm
               pkgs.powershell
               pkgs.pre-commit
               pkgs.ripgrep
               pkgs.terraform-docs
               pkgs.tf-summarize
+              pkgs.openssl
               pkgs.tflint
               pkgs.tfsec
               pkgs.tfswitch
               pkgs.tfupdate
               pkgs.tree
-              pkgs.fish
               pkgs.fzf
-              pkgs.meslo-lgs-nf
-              pkgs.fishPlugins.fzf-fish
-              pkgs.fishPlugins.tide
             ];
           };
       });
