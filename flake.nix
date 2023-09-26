@@ -36,9 +36,11 @@
               pkgs.checkov
               pkgs.dotnet-runtime_7
               pkgs.fzf
+              pkgs.fzf
               pkgs.go
               pkgs.helix
               pkgs.kubernetes-helm
+              pkgs.ledger
               pkgs.ncdu
               pkgs.openssl
               pkgs.powershell
