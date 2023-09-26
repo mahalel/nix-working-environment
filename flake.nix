@@ -35,24 +35,22 @@
               pkgs.azure-cli
               pkgs.checkov
               pkgs.dotnet-runtime_7
+              pkgs.fzf
+              pkgs.go
               pkgs.helix
               pkgs.kubernetes-helm
+              pkgs.ncdu
+              pkgs.openssl
               pkgs.powershell
               pkgs.pre-commit
               pkgs.ripgrep
               pkgs.terraform-docs
-              pkgs.tf-summarize
-              pkgs.openssl
               pkgs.tflint
               pkgs.tfsec
+              pkgs.tf-summarize
               pkgs.tfswitch
               pkgs.tfupdate
               pkgs.tree
-              pkgs.fzf
-<<<<<<< Updated upstream
-=======
-              pkgs.go
->>>>>>> Stashed changes
             ];
           };
       });
