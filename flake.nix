@@ -27,18 +27,17 @@
       devShells = forAllSystems ({ pkgs }: {
         default =
           let
-            # azcli = pkgs.azure-cli;
           in
           pkgs.mkShell {
             # The Nix packages provided in the environment
             packages = [
-              pkgs.azure-cli
-              pkgs.checkov
-              pkgs.dotnet-runtime_7
+              # pkgs.azure-cli
+              # pkgs.checkov
+              # pkgs.dotnet-runtime_7
               pkgs.fzf
               pkgs.go
               pkgs.helix
-              pkgs.kubernetes-helm
+              # pkgs.kubernetes-helm
               pkgs.ledger
               pkgs.ncdu
               pkgs.openssl
@@ -47,8 +46,8 @@
               pkgs.ripgrep
               pkgs.terraform-docs
               pkgs.tflint
-              pkgs.tfsec
-              pkgs.tf-summarize
+              # pkgs.tfsec
+              # pkgs.tf-summarize
               pkgs.tfswitch
               pkgs.tfupdate
               pkgs.tree
