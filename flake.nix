@@ -34,10 +34,15 @@
               # pkgs.azure-cli
               # pkgs.checkov
               # pkgs.dotnet-runtime_7
+              # pkgs.tf-summarize
+              # pkgs.tfsec
+              pkgs.cargo
               pkgs.fzf
               pkgs.go
               pkgs.helix
-              # pkgs.kubernetes-helm
+              pkgs.nodePackages.prettier
+              pkgs.infracost
+              pkgs.kubernetes-helm
               pkgs.ledger
               pkgs.ncdu
               pkgs.openssl
@@ -46,11 +51,15 @@
               pkgs.ripgrep
               pkgs.terraform-docs
               pkgs.tflint
-              # pkgs.tfsec
-              # pkgs.tf-summarize
               pkgs.tfswitch
               pkgs.tfupdate
               pkgs.tree
+              pkgs.python311Packages.python-lsp-server
+              pkgs.gopls
+              pkgs.delve
+              pkgs.yaml-language-server
+              pkgs.terraform-ls
+              pkgs.cobra-cli
             ];
           };
       });
