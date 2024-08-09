@@ -1,5 +1,5 @@
 {
-  description = "Example Python development environment for Zero to Nix";
+  description = "Dev Packages";
 
   # Flake inputs
   inputs = {
@@ -31,16 +31,10 @@
           pkgs.mkShell {
             # The Nix packages provided in the environment
             packages = [
-              # pkgs.azure-cli
-              # pkgs.checkov
-              # pkgs.dotnet-runtime_7
-              # pkgs.tf-summarize
-              # pkgs.tfsec
+              pkgs.tf-summarize
+              pkgs.opentofu
               pkgs.cargo
               pkgs.fzf
-              pkgs.go
-              pkgs.helix
-              pkgs.nodePackages.prettier
               pkgs.infracost
               pkgs.kubernetes-helm
               pkgs.ledger
@@ -54,12 +48,33 @@
               pkgs.tfswitch
               pkgs.tfupdate
               pkgs.tree
-              pkgs.python311Packages.python-lsp-server
+              pkgs.cobra-cli
+              pkgs.fd
+              # pkgs.lazygit
+              pkgs.json-schema-for-humans
+              pkgs.gh
+              pkgs.go
+              pkgs.check-jsonschema
+              pkgs.glow
+              pkgs.entr
+              pkgs.hugo
+              # pkgs.llm
+              # Language Servers and debuggers
+              pkgs.nodePackages.pyright
+              pkgs.nil
+              pkgs.tailwindcss-language-server
+              pkgs.ruff-lsp
               pkgs.gopls
               pkgs.delve
               pkgs.yaml-language-server
-              pkgs.terraform-ls
-              pkgs.cobra-cli
+              # pkgs.serpl
+
+
+              # Python packages
+              pkgs.python311Packages.pandas
+              pkgs.python311Packages.python-docx
+              # pkgs.python311Packages.python-pptx
+              # pkgs.python311Packages.python-dotenv
             ];
           };
       });
